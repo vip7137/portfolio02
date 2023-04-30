@@ -1,4 +1,8 @@
 /****************************** 사이트 기본 설정 ******************************/
+html { 
+  scroll-behavior: smooth; 
+} 
+
 .main-sustainability__link:focus:before{outline:3px dotted #333;outline-offset:-2px;-webkit-box-shadow:inset 0 0 0 1px #fff;box-shadow:inset 0 0 0 1px #fff}
 .main-news .main-news-list__title-text{width:100%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.5em;max-height:3em}
 .container.main{text-align:center}section[class*="main-"]{height:100vh;overflow:hidden}
@@ -79,7 +83,6 @@
     display: flex;
     list-style: none;
     padding-left: 0;
-    scroll-behavior: smooth;
   }
 
   .navbar-menu li{
