@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @font-face {
+          font-family: 'KIMM_Bold';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+          font-weight: 700;
+          font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'KIMM_Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+      }
+    </style>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
+    <!-- CSS / JavaScript -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/vendor.min.js"></script>
+
+</head>
+<body id="myPage">
+
+    <div class="wrapper">
+
+    <!-- Navigation ---------------------------------------------------------------------------->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo" style="color: black;">
+        <i class="fa-solid fa-laptop-code"></i>
+        <a href="#myPage">Portfolio</a>
+      </div>
+
+      <div class="navbar-menu">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#collection-of-work">지금까지 작업한 작품들</a></li>
+        <li><a href="#about-me">자기소개</a></li>
+      </div>
+
+      <a href="#" class="navbar-toogleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+    <!-- Navigation-->
+    
+    <section class="main-visual">
+      <div class="swiper main-visual__swiper" data-options='{"loop": true, "autoplay": "6000", "pagination": "bullet", "effect": "fade"}' id="main-visual-swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- [js]
+              - 최초 메인 진입 시 뜨는 팝업 닫히면(button.main-popup__close.is-close 클랙) 활성화된 첫번째 div.swiper-slide.swiper-slide-active에 .main-swiper-slide-active class 추가
+              - slide 넘기거나 span.swiper-pagination-bullet 클릭하여 다음 slide로 이동 시 div.swiper-slide.swiper-slide-active에 .main-swiper-slide-active 추가/제거
+            -->
+	
+	 		<div class="swiper-slide main-visual__swiper-slide">
+              <div class="main-visual__swiper-slide-inner">
+                <h2 class="main-visual__swiper-slide-title">PORTFOLIO</h2>
+                <p class="main-visual__swiper-slide-desc">열정 많고<br class="br--mo"> 끈기있는 <br class="br--mo">개발자</p>
+              </div>
+              <div class="main-visual__swiper-slide-bg">
+                <img src="/image/morning.jpg" alt="" class="img--pc">
+              </div>
+            </div>
+	
+	 		<div class="swiper-slide main-visual__swiper-slide">
+              <div class="main-visual__swiper-slide-inner">
+                <h2 class="main-visual__swiper-slide-title">PORTFOLIO</h2>
+                <p class="main-visual__swiper-slide-desc">열정 많고<br class="br--mo"> 끈기있는 <br class="br--mo">개발자</p>
+              </div>
+              <div class="main-visual__swiper-slide-bg">
+                <img src="/image/church-g5f747b052_1920.jpg" alt="" class="img--pc">
+              </div>
+            </div>
+	
+	 		<div class="swiper-slide main-visual__swiper-slide">
+              <div class="main-visual__swiper-slide-inner">
+                <h2 class="main-visual__swiper-slide-title">PORTFOLIO</h2>
+                <p class="main-visual__swiper-slide-desc">열정 많고<br class="br--mo"> 끈기있는 <br class="br--mo">개발자</p>
+              </div>
+              <div class="main-visual__swiper-slide-bg">
+                <img src="/image/terraces-g214ea6922_1920.jpg" alt="" class="img--pc">
+              </div>
+            </div>
+	
+			</div>
+        </div>
+        <div class="swiper-btn-wrap">
+          <div class="swiper-button-prev" aria-label="Previous slide">이전</div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next" aria-label="Next slide">다음</div>		
+        </div>
+      </div> 
+      <div class="main-scroll" aria-hidden="true">
+        <div class="main-scroll__track">
+            <div class="main-scroll__bar"></div>
+        </div>
+      </div>
+    </section>      
+
+    <!-- What HL Klemove Do -->
+
+        <!-- Services -->
+        <div id="skills"></div>
+        <section class="page-section" style="margin-top: 70px;">
+          <div class="container px-4 px-lg-5">
+              <h2 class="text-center mt-0" style="font-family: 'Sunflower' !important; font-size: 50px; line-height: 60px;">[ Skills ]</h2>
+              <hr class="divider" />
+              <div class="row gx-4 gx-lg-5">
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-brands fa-java" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">Java</h3>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-solid fa-database" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">OracleDB</h3>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">HTML</h3>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-brands fa-css3" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">CSS</h3>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-brands fa-js" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">JavaScript</h3>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><img src="https://img.icons8.com/ios-filled/100/null/jquery.png"/></div>
+                          <h3 class="h4 mb-2-1">JQuery</h3>
+                      </div>
+                  </div>
+                  <!-- <div class="col-lg-2 col-md-6 text-center">
+                      <div class="mt-5">
+                          <div class="mb-2"><i class="fa-brands fa-react" style="font-size: 100px;"></i></div>
+                          <h3 class="h4 mb-2-1">ReactJS</h3>
+                      </div>
+                  </div> -->
+
+              </div>
+          </div>
+      </section>
+    <!-- //What HL Klemove Do -->    
+
+     <!---------------------------------------------------- 지금까지 작업한 작업물 ---------------------------------------------------->
+     <div id="collection-of-work"></div>
+     <section class="main-sustainability" style="margin-top: 70px;">
+      <div class="main-sustainability__inner">
+        <h2 class="main-title" style="margin-top: 50px; text-align: center;">지금까지 작업한 작품들</h2>
+        <div class="main-sustainability__content">
+          <div class="main-sustainability__menu menu1">
+            <a href="https://vip7137.github.io/portfolio01/game.html" class="main-sustainability__link" title="테트리스 게임 페이지 이동">
+              <h3 class="main-sustainability__title" style="color: #fff;">테트리스 게임</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu2">
+            <a href="https://vip7137.github.io/portfolio01/Apple.html" class="main-sustainability__link" title="반응형 Apple 데모사이트 페이지 이동">
+              <h3 class="main-sustainability__title">반응형 Apple 데모사이트</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu3">
+            <a href="https://vip7137.github.io/portfolio01/Netflix.html" class="main-sustainability__link" title="설국열차 데모사이트 페이지 이동">
+              <h3 class="main-sustainability__title">넷플릭스의 <설국열차> 데모사이트</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu4">
+            <a href=https://vip7137.github.io/portfolio01/BATTLEFIELD.html class="main-sustainability__link" title="배틀필드2042 데모사이트 페이지 이동">
+              <h3 class="main-sustainability__title">EA의 <배틀필드2042> 데모사이트</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu5">
+            <a href="https://vip7137.github.io/portfolio01/TIS.EDU.html" class="main-sustainability__link" title="반응형 TIS정보기술교육센터 페이지 이동">
+              <h3 class="main-sustainability__title">반응형 TIS정보기술교육센터 데모사이트</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu6">
+            <a href="https://youtu.be/hX8lyEg3iVk" class="main-sustainability__link" title="학사관리 프로그램 페이지 이동">
+              <h3 class="main-sustainability__title" style="color:black">학사관리 프로그램</h3>
+            </a>
+          </div>
+          <div class="main-sustainability__menu menu7">
+            <p class="main-sustainability__link" title="작업물 없음">
+              <h3 class="main-sustainability__title" style="padding : 10px;">새 작업물 올릴 예정</h3>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 지금까지 작업한 작업물 -->
+
+    <!-- 작성자의 자기소개 -->
+    <section class="main-about motion--item" id="about-me">
+      <div class="main-about__inner">
+        <h2 class="main-title">LEE DO HYEOK</h2>        
+        <div class="main-about__text">          
+          <p class="main-about__title">Michuhol-gu, <br class="br--mo"><strong>Incheon, <br class="br--mo">Republic of Korea,</strong></p>          
+          <p class="main-about__title">TEL : <br class="br--mo"><strong>(010)2960-2200,</strong></p>
+          <p class="main-about__title">E-mail :<br class="br--mo"><strong> vip71377@naver.com</strong></p>         
+          <p class="main-about__desc">개발자가 되기위해 저는 직업훈련 전문학원에서 <br class="br--pc">6개월의 교육기간을 통해 Java와 css등 필요한 전문지식들을 배웠습니다.<br class="br--pc">비록 비전공자일지라도 열정은 누구에게도 지지않을 가지고 있습니다.</p>
+        </div>
+        <div class="main-about__bg"><!-- design background image --></div>
+      </div>
+    </section>
+    <!-- //About HL Klemove -->
+
+  <!------------------------- Footer  ------------------------->
+	<footer id="footer" class="footer">
+		<div class="footer__inner">
+			<div class="footer__top">
+        <ul class="site" style="width: 150px; height:50px;margin-left:auto; margin-right:auto;">
+        	<li class="site-map__depth1">
+            <a href="https://github.com/vip7137/portfolio01"><i class="fa-brands fa-github" style="font-size: 50px;"></i></a>
+          </li>          
+          <li class="site-map__depth1">
+            <a href="https://twitter.com/LEE_DO_HYEOK" target="_blank"><i class="fab fa-twitter" style="font-size: 50px;"></i></a>
+          </li>     
+        </ul>
+			</div>
+		</div>
+		<a href="#container" class="btn--top" title="페이지 상단으로 이동" role="button"><span>top</span></a>
+    </footer>	
+</body>
+</html>
