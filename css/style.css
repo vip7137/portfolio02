@@ -70,7 +70,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00b5ed;
+    /* background-color: #00b5ed; */
     padding: 8px 12px;
   }
 
@@ -317,7 +317,12 @@ html {
 
   /*************************** 스킬 폰트 크기 설정 ***************************/
   .mb-2-1{
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .mb-2 img{
+    width: 80px;
+    height: 80px;
   }
 
   .main-scroll__track{height:7.8125vw}
@@ -380,9 +385,15 @@ html {
   .menu5 .main-sustainability__link:after{background-image:url(../image/TIS.EDU.jpg)}
   .menu6 .main-sustainability__link:after{background-image:url(../image/JAVA.jpg)}
   .menu7 .main-sustainability__link:after{background-image:url(../image/portfolio.jpg)}
-  .main-sustainability__link:hover:after,.main-sustainability__link:focus:after{-webkit-transform:scale(1.1);transform:scale(1.1)}
+  .main-sustainability__link:hover:after,.main-sustainability__link:focus:after{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    filter: brightness(0.5);
+    opacity: 1;
+  }
   .main-sustainability__link:focus:before{display:block;content:'';position:absolute;left:0;top:0;width:100%;height:100%;z-index:1}
-  .main-sustainability__title{position:relative;color:#fff;font-size:24px;font-weight:700;line-height:36px;z-index:1}
+  .main-sustainability__title{opacity: 0; position:relative;color:#fff;font-size:24px;font-weight:700;line-height:36px;z-index:1}
+  .main-sustainability__menu:hover .main-sustainability__title{opacity: 1;}
 
   /***********************   자기소개하는 구간 부분   ***********************/
   .main-about{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
