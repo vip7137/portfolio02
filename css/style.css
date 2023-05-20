@@ -155,7 +155,6 @@ font-style: normal;
     position: absolute;
     right: 32px;
     font-size: 24px;
-    color: yellow;
   }
 
   @media screen and (max-width: 768px) {
@@ -224,7 +223,8 @@ font-style: normal;
     font-family: "KIMM_Bold";
     font-size:100px;
     font-weight:700;
-    line-height:130px
+    line-height:110px;
+    margin: 0px;
   }
 
   .main-visual__swiper-slide-desc{
@@ -543,12 +543,34 @@ font-style: normal;
   .footer .address span{display:block}
   .footer .copyright{margin-top:14px}
   .footer .copyright span{display:block}
-  .footer .btn--top{right:18px;bottom:552px;margin-left:0;left:auto;top:auto}html:lang(ko) 
   .footer .mark{padding:0 36px 52px 36px}
-  .footer .btn--top{top:-5vw;width:2.5vw;height:2.5vw;margin-left:45vw;font-size:.72917vw}
-  .footer .btn--top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:absolute;z-index:10;left:50%;margin-left:864px;top:-96px;width:48px;height:48px;border-radius:100%;background:rgba(0,0,0,0.55);color:#fff;font-size:14px;font-weight:700;text-transform:uppercase}
-  .footer .btn--top:before{content:'';display:block;position:absolute;left:0;top:0;right:0;bottom:0;border:1px solid rgba(225,225,225,0.9);border-radius:100%}
-  
+
+  /*********************** top버튼 스타일 설정 ***********************/
+  #progress{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    z-index: 15;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
+
   .container,
   .container-fluid,
   .container-xxl,
@@ -710,7 +732,7 @@ font-style: normal;
   
   .col-md-6 {
       flex: 0 0 auto;
-      width: 33.3%;
+      width: 25%;
     }
   
     .text-center {
