@@ -145,16 +145,7 @@ toogleBtn.addEventListener('click',() => {
   o = t.O(o)
 }();
 
-// 스크롤 높이 확인
-$(window).on("scroll",function(){
-    var sc_top=$(this).scrollTop();
-
-    $(".top").text(sc_top); // text(값)는 javascript의 'innerText=값' 과 같은 역할
-
-    console.log($(this).scrollTop());
-})
-
-// 스크롤의 높이에 따른 글자색 변경 이벤트(높이 890기준으로 변경하기)
+// 스크롤의 높이에 따른 네비게이션바 색 변경 이벤트(높이 890기준으로 변경하기)
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -165,4 +156,38 @@ $(document).ready(function(){
       $(".navbar").css("background" , "transparent");   
     }
   })
+})
+
+
+//따라다니는 TOP버튼
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = 
+      document.documentElement.scrollHeight - 
+      document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if(pos>100){
+      scrollProgress.style.display = "grid";
+    }
+    else{
+      scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+      document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;  // 내려간 만큼 원안에 색상이 채워지기
+  }
+
+  window.onscroll = calcScrollValue;
+  window
+
+// 스크롤 높이 확인
+$(window).on("scroll",function(){
+    var sc_top=$(this).scrollTop();
+
+    $(".top").text(sc_top); // text(값)는 javascript의 'innerText=값' 과 같은 역할
+
+    console.log($(this).scrollTop());
 })
