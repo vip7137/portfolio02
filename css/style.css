@@ -157,63 +157,6 @@ font-style: normal;
     font-size: 24px;
   }
 
-  /* 화면 크기에 따른 네비게이션 바 글자 크기 설정 */
-  @media screen and (min-width: 1850px) {
-    .navbar__logo{
-      text-size-adjust: 100%;
-    }
-
-    div{
-      text-size-adjust: 100%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-    }
-
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar-menu li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar-toogleBtn{
-        display: block;
-    }
-
-    .navbar-menu.active{
-        display: flex;
-    }
-
-  }
-  @media screen and (max-width: 450px) {
-    .navbar__logo{
-      -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라(신) */
-      -ms-text-size-adjust : none;  /* IE */
-      -moz-text-size-adjust : none;  /* 파이어폭스 */
-      -o-text-size-adjust : none;  /* 오페라(구)*/
-      text-size-adjust: auto;
-    }
-
-    div{
-      -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라(신) */
-      -ms-text-size-adjust : none;  /* IE */
-      -moz-text-size-adjust : none;  /* 파이어폭스 */
-      -o-text-size-adjust : none;  /* 오페라(구)*/
-      text-size-adjust: auto;
-    }
-  }
-
   /*************************** 메인 화면에 나오는 이미지 슬라이드 크기 설정  ***************************/
   .scroll-wrapper{position:relative;overflow:hidden !important;padding:0 !important}
   .scroll-wrapper .scroll-content{position:relative !important;top:0;left:0;height:auto;width:auto !important;max-height:none;max-width:none !important;margin:0;padding:0 30px 0 0 !important;border:none !important;overflow:scroll !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important}
@@ -794,6 +737,17 @@ font-style: normal;
       margin-top: 3rem !important;
     }
 
+    /* 화면 크기에 따른 네비게이션 바 글자 크기 설정 */
+    @media screen and (min-width: 1200px) {
+      .navbar__logo{
+        text-size-adjust: 100%;
+      }
+  
+      div{
+        text-size-adjust: 100%;
+      }
+    }
+
     /*************************** 모바일로 볼수 있게 설정 ***************************/
     @media only screen and (max-width: 768px) {
       .main-visual__swiper {
@@ -874,6 +828,32 @@ font-style: normal;
       .main-about__desc {
           font-size: 16px;
           line-height: 26px
+      }
+
+      .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+      }
+
+      .navbar-menu {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+      }
+
+      .navbar-menu li {
+          width: 100%;
+          text-align: center;
+      }
+
+      .navbar-toogleBtn{
+          display: block;
+      }
+
+      .navbar-menu.active{
+          display: flex;
       }
       
       /* 자기소개 모바일 버전의 모습 */
@@ -986,23 +966,39 @@ font-style: normal;
       }
   }
 
-  @media only screen and (max-width: 425px) {
-          /* skille 폰트 크기 설정 */
-    .container{
-      width: 400px;
-    }
+    @media screen and (max-width: 594px) {
+      .navbar__logo{
+        -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라(신) */
+        -ms-text-size-adjust : none;  /* IE */
+        -moz-text-size-adjust : none;  /* 파이어폭스 */
+        -o-text-size-adjust : none;  /* 오페라(구)*/
+        text-size-adjust: auto;
+      }
+  
+      div{
+        -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라(신) */
+        -ms-text-size-adjust : none;  /* IE */
+        -moz-text-size-adjust : none;  /* 파이어폭스 */
+        -o-text-size-adjust : none;  /* 오페라(구)*/
+        text-size-adjust: auto;
+      }
 
-    .px-lg-5{
-      padding-left: 1rem !important;
-      padding-right: 1rem !important;
-    }
+      /* skille 폰트 크기 설정 */
+      .container{
+        width: 400px;
+      }
 
-    .col-md-6{
-      width: 50%;
-      flex: 0 0 auto;
-    }
+      .px-lg-5{
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
 
-    .mb-2-1{
-      font-size: 23px;
+      .col-md-6{
+        width: 50%;
+        flex: 0 0 auto;
+      }
+
+      .mb-2-1{
+        font-size: 23px;
+      }
     }
-  }
