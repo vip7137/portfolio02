@@ -957,3 +957,24 @@ font-style: normal;
           text-align: center
       }
   }
+
+  @media only screen and (max-width: 425px) {
+          /* skille 폰트 크기 설정 */
+    .container{
+      width: 400px;
+    }
+
+    .px-lg-5{
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .col-md-6{
+      width: 50%;
+      flex: 0 0 auto;
+    }
+
+    .mb-2-1{
+      font-size: 23px;
+    }
+  }
