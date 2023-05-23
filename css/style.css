@@ -562,6 +562,13 @@ font-style: normal;
   }
 
   /*********************** top버튼 스타일 설정 ***********************/
+  .up-arrow{
+    background:url(../image/icon-up.png) no-repeat;
+    width: 31px;
+    height: 31px;
+    margin: auto;
+  }
+
   #progress{
     position: fixed;
     bottom: 50px;
@@ -760,7 +767,7 @@ font-style: normal;
     }
 
     /*************************** 모바일로 볼수 있게 설정 ***************************/
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
       .main-visual__swiper {
           height: 100vh
       }
@@ -855,7 +862,7 @@ font-style: normal;
 
       /* skille 폰트 크기 설정 */
       .mb-2-1{
-        font-size: 17px;
+        font-size: 20px;
       }
   
       /* 프로젝트 설정 */
