@@ -160,11 +160,11 @@ font-style: normal;
   /* 화면 크기에 따른 네비게이션 바 글자 크기 설정 */
   @media screen and (min-width: 1850px) {
     .navbar__logo{
-      font-size: 27px;
+      text-size-adjust: 100%;
     }
 
     div{
-      font-size: 27px;
+      text-size-adjust: 100%;
     }
   }
 
@@ -195,6 +195,15 @@ font-style: normal;
         display: flex;
     }
 
+  }
+  @media screen and (max-width: 450px) {
+    .navbar__logo{
+      text-size-adjust: auto;
+    }
+
+    div{
+      text-size-adjust: auto;
+    }
   }
 
   /*************************** 메인 화면에 나오는 이미지 슬라이드 크기 설정  ***************************/
