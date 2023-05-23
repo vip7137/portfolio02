@@ -603,7 +603,7 @@ font-style: normal;
   
   @media (min-width: 576px) {
     .container-sm, .container {
-      max-width: 540px;
+      max-width: 600px;
     }
   }
   @media (min-width: 768px) {
