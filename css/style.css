@@ -157,6 +157,17 @@ font-style: normal;
     font-size: 24px;
   }
 
+  /* 화면 크기에 따른 네비게이션 바 글자 크기 설정 */
+  @media screen and (min-width: 1850px) {
+    .navbar__logo{
+      font-size: 27px;
+    }
+
+    div{
+      font-size: 27px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .navbar{
         flex-direction: column;
