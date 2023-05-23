@@ -6,7 +6,7 @@ toogleBtn.addEventListener('click',() => {
     menu.classList.toggle('active');
 });
 
-// 정리가 필요
+// 메인화면 이미지 슬라이드 이벤트 설정
 !function() {
   "use strict";
   var e, n = {}, r = {};
@@ -182,12 +182,3 @@ let calcScrollValue = () => {
 
   window.onscroll = calcScrollValue;
   window
-
-// 스크롤 높이 확인
-$(window).on("scroll",function(){
-    var sc_top=$(this).scrollTop();
-
-    $(".top").text(sc_top); // text(값)는 javascript의 'innerText=값' 과 같은 역할
-
-    console.log($(this).scrollTop());
-})
